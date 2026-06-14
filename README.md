@@ -10,13 +10,22 @@ The model learns to generate Shakespeare-style text one character at a time. Giv
 
 **Example output:**
 ```
-This is strange.
-PERDITA:
-No,
-Now in thy worst,
-And no oath to be content of this passage,
-Let the gate; or I'll stay what encounter to't;
-When one fair will the heart that flesh of you?
+Triumpens lady as this like asister,
+To regal inveness of me; ware person,
+So two much mirclip in justice: with such ron,
+The worlds and is larged in presence.
+
+Second Murderer:
+Here it that; and for our coming with himself.
+
+Servant:
+It is that all forning it, that would be done.
+Fool, no more to that he rest.
+
+CLARENCE:
+To the Clarence intended every Baptiss so here,
+Lest his successful way, till he is to resist
+A danger of direfulness at reason.
 ```
 
 ---
@@ -101,11 +110,20 @@ python3 bigram.py
 
 Training prints loss every 500 steps. A well-trained model reaches around `1.4-1.6` validation loss:
 ```
+Device: mps
+10.788929 M parameters
 step 0:    train loss 4.2221, val loss 4.2306
-step 500:  train loss 2.0341, val loss 2.1024
-step 1000: train loss 1.7823, val loss 1.8901
-...
-step 4999: train loss 1.4012, val loss 1.5643
+step 500:  train loss 1.7453, val loss 1.9068
+step 1000: train loss 1.3902, val loss 1.5966
+step 1500: train loss 1.2653, val loss 1.5245
+step 2000: train loss 1.1863, val loss 1.4978
+step 2500: train loss 1.1223, val loss 1.4985
+step 3000: train loss 1.0723, val loss 1.4794
+step 3500: train loss 1.0184, val loss 1.5027
+step 4000: train loss 0.9610, val loss 1.5156
+step 4500: train loss 0.9103, val loss 1.5475
+step 4999: train loss 0.8619, val loss 1.5596
+Model saved!
 ```
 
 The trained model is saved as `gpt_model.pth`.
