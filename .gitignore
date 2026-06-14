@@ -1,0 +1,7 @@
+._*
+__pycache__/
+*.pth
+input.txt
+training.log
+._.git
+.___pycache__
